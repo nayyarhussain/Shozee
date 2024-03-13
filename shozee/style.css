@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header start */
+
+
+header{
+    height: 60px;
+width: 100%; 
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    
+}
+
+
+.home::after{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.726) ;
+    width: 50%;
+    height: 2px;
+
+}
+
+header a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 14px;
+    margin: 0 10px;
+    position: relative;
+    
+}
+
+
+
+header a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.726);
+    left: 0;
+    bottom: -5px;
+    transition: 0.15s;
+}
+header a:hover::after{
+   
+    width: 50%;
+   
+}
+
+.account{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.account div button{
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: none;
+}
+
+.account div i{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.726);
+    position: relative;
+    cursor: pointer;
+}
+
+.card-box{
+    position: relative;
+}
+.added-in-card{
+    position: absolute;
+   
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0  10px 0px rgba(0, 0, 0, 0.052);
+    border-radius: 5px;
+    top: 100%;
+    left: -130px;
+    z-index: 100000;
+   
+
+}
+
+.added-in-card-js{
+    display: none;
+
+}
+
+.added-in-card-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid ghostwhite;
+    padding: 4px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+
+
+}
+.added{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.card-img{
+    width: 40px;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-detail h2{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.card-detail p{
+    font-size: 11px;
+}
+
+
+
+.js-after::after{
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFB202;
+    border: 2px solid #fff;
+    right: -6px;
+
+
+}
+
+.user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* header end */
+
+
+/* main start */
+
+main{
+    height:calc(100vh - 60px) ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.star1 img{
+    width: 40px;
+    position: absolute;
+    left: 40px;
+    top: 10%;
+}
+
+.star2 img{
+     width: 30px;
+    position: absolute;
+    right: 70px;
+    bottom: 10%;
+}
+
+.comment1 img{
+    position: absolute;
+    width: 15vw;
+    left: 20%;
+    bottom: 25%;
+    z-index: 100;
+}
+.comment2 img{
+    position: absolute;
+    width: 15vw;
+    right: 20%;
+    top: 30%;
+    z-index: 100;
+}
+
+.threeDot{
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.threeDot span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+
+.threeDot :nth-child(2){
+background-color: #FFB202;
+}
+
+main .shoe-con{
+    
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    width: 50%;
+
+}
+
+.layer-blur{
+    position: absolute;
+    background-color: #ffb30236;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(90px);
+    z-index: -1;
+    
+}
+
+main div img{
+
+    width: 40vmax;
+   
+
+  
+}
+
+.price {
+    display: inline;
+    position: absolute;
+    left: 25%;
+    top: 22%;
+    
+    font-size: 4vw;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    
+    z-index: 100;
+    text-align: start;
+}
+
+/* main end */
+
+/* section start */
+
+section{
+    height: 100%;
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(244, 244, 244, 0.101);
+
+}
+
+section h1{
+    position: relative;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section h1::after{
+    content: "";
+    width: 50%;
+    background-color: black;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0
+    ;
+    bottom: -5px;
+}
+
+.card-con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 100px 0;
+   
+}
+.card-item{
+    width:100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+
+
+
+.add-card{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    border: 5px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.add-card:hover{
+    background-color: #1a1a1a;
+}
+.add-card:active{
+        opacity: 0.6;
+    }
+
+.add-card h2{
+    color: white;
+    font-size: 18px;
+}
+
+.item{
+    background-color: #fefefe;
+    width: 200px;
+    height: 220px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px  0 20px
+     2px rgb(233, 233, 233);
+     position: relative;
+
+}
+
+.img-con{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(189, 189, 189);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.img-con img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-img{
+    padding: 5px 0;
+}
+
+.about-img img{
+    vertical-align: middle;
+    margin:  0 5px;
+}
+.about-img h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-img p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.804);
+}
+
+.about-img img{
+    width: 70px;
+    vertical-align: middle;
+}
+
+/* section end */
+
+/* footer start */
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-radius: 20px 20px 0 0;
+    padding: 30px;
+}
+
+.footer-con{
+    margin: 10px 0;
+    display: flex
+    ;
+    justify-content: space-between;
+    gap: 10px;
+
+   
+}
+
+.footer-nav{
+    display: flex;
+    width: 100%;
+}
+
+.disclamer{
+    width: 30%;
+}
+
+.disclamer p{
+    color: #dadada
+    ;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.disclamer h3{
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    font-weight:400;
+    margin: 
+    10px 0;
+    position: relative;
+}
+.disclamer h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30%;
+    height: 2px;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+.footer-a li{
+    list-style: none;
+    margin: 5px 0;
+
+}
+.footer-a a{
+    color: #a0a0a0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-a h3{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+    position: relative;
+
+}
+
+.footer-a h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30%;
+    height: 2px;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+form{
+   width: 20%;
+   text-align: center;
+
+}
+
+form input{
+    display: block;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.192);
+    border: none;
+    margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: rgba(201, 201, 201, 0.884)
+    ;
+}
+
+form h3{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+    display: inline-block;
+    position: relative;
+}
+form h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30%;
+    height: 2px;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+form button{
+    background-color: #FFB202;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 50px;
+
+}
+form i{
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.inp-con{
+    position: relative;
+
+}
+
+.icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: rgba(255, 255, 255, 0.192);
+    transform: translateY(-50%);
+}
+
+
+
+
+/* responsive */
+
+@media (max-width: 1038px){
+    .price{
+        top: 25%;
+
+    }
+    main div img{
+        width: 100%;
+    }
+}
+
+@media (max-width:889px){
+    .price{
+        top: 30%;
+    }
+    main .shoe-con{
+        width: 70%;
+     }
+    .comment1 img{
+        left: 10%;
+        width: 20vw;
+    }
+    .comment2 img{
+        right: 10%;
+        width: 20vw;
+    }
+
+    .footer-con {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       
+
+    }
+
+    .disclamer{
+        width: 100%;
+    }
+
+    .footer-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    form{
+        width: 100%;
+    }
+    .inp-con {
+       
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  
+}
+
+@media (max-width: 669px){
+        .price{
+            top: 35%;
+        }
+        main .shoe-con{
+           width: 100%;
+        }
+
+        main div img{
+            width: 70vw;
+            text-align: center;
+        }
+
+        .card-item{
+            justify-content: center;
+        }
+
+}
+
+@media (max-width : 582px){
+
+    header nav{
+        display: none;
+    }
+    .comment1 img{
+        bottom: 30%;
+        width: 30vw;
+    }
+    .comment2 img{
+        right: 10%;
+        width: 30vw;
+        top: 35%;
+    }
+    .card-item{
+        justify-content: center;
+    }
+
+    .footer-con {
+        display: grid;
+        grid-template-columns: 1fr ;
+        
+ 
+     }
+
+}
+@media (max-width : 406px){
+
+    .card-item{
+        justify-content: center;
+    }
+    .comment1 img{
+        bottom: 35%;
+        width: 30vw;
+    }
+    .comment2 img{
+        right: 10%;
+        top:40%;
+        width: 30vw;
+       
+    }
+    main .shoe-con{
+        width: 100%;
+     }
+     main div img{
+        width: 90%;
+        text-align: center;
+    }
+
+    
+}
+
+@media (max-width : 317px){
+
+    .card-item{
+        justify-content: center;
+    }
+    .comment1 img{
+        bottom: 35%;
+        width: 30vw;
+    }
+    .comment2 img{
+        right: 5%;
+        top:40%;
+        width: 30vw;
+       
+    }
+}
